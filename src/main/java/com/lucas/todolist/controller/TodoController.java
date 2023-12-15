@@ -19,4 +19,8 @@ public class TodoController {
     public List<Todo> create(Todo todo) {
         return todoService.create(todo);
     }
+
+    public List<Todo> list() {
+        return todoService.list();
+    }
 }
