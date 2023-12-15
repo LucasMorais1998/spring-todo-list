@@ -23,4 +23,8 @@ public class TodoController {
     public List<Todo> list() {
         return todoService.list();
     }
+
+    public List<Todo> update(Todo todo) {
+        return todoService.update(todo);
+    }
 }
