@@ -15,6 +15,12 @@ public class TodoService {
         this.todoRepository = todoRepository;
     }
 
+    public List<Todo> create(Todo todo) {
+        todoRepository.save(todo);
+
+        return list();
+    }
+
     public List<Todo> list() {
         Sort sort = Sort.by("priority").descending().and(
                 Sort.by("name").ascending());
