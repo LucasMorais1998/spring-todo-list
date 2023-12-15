@@ -27,4 +27,10 @@ public class TodoService {
 
         return todoRepository.findAll(sort);
     }
+
+    public List<Todo> update(Todo todo) {
+        todoRepository.save(todo);
+
+        return list();
+    }
 }
