@@ -13,6 +13,13 @@ public class Todo {
     private boolean isComplete;
     private int priority;
 
+    public Todo(String name, String description, boolean isComplete, int priority) {
+        this.name = name;
+        this.description = description;
+        this.isComplete = isComplete;
+        this.priority = priority;
+    }
+
     public Long getId() {
         return id;
     }
